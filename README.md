@@ -22,6 +22,7 @@ ga4-bigquery-neobank-analytics/
 └── sql/
     ├── 01_explore_ga4_schema.sql       → GA4 schema discovery, UNNEST event_params
     ├── 02_user_acquisition.sql         → Traffic sources, channel performance, CAC proxy
+    ├── 03_conversion_funnel.sql        → Event funnel: landing → engagement → conversion
 ```
 
 ---
@@ -43,7 +44,7 @@ ga4-bigquery-neobank-analytics/
 |---|---|
 | `01_explore_ga4_schema.sql` | `UNNEST`, `ARRAY<STRUCT>`, nested fields, event taxonomy |
 | `02_user_acquisition.sql` | `traffic_source`, channel grouping, `COUNT DISTINCT`, session reconstruction |
-
+| `03_conversion_funnel.sql` | Conditional aggregation, funnel steps, conversion rate, `CASE WHEN` |
 
 ---
 
