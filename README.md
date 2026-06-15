@@ -26,7 +26,6 @@ ga4-bigquery-neobank-analytics/
     ├── 04_retention_cohorts.sql        → Weekly cohort retention (visits & purchases)
     └── 05_business_playbook.sql        → Combined KPIs: ROAS proxy, LTV estimate, churn signal
 ```
-
 ---
 
 ## How to Run
@@ -61,6 +60,11 @@ ga4-bigquery-neobank-analytics/
 | Q3 | What does weekly retention look like by acquisition cohort? | Growth & repeat purchase KPIs |
 | Q4 | Which user segments have the highest revenue potential? | LTV-based targeting |
 | Q5 | Which users showed purchase intent but never converted? | Re-engagement prioritisation |
+
+---
+
+## Data Visualization & Interpretation (WIP)
+Data Studio (WIP): https://datastudio.google.com/reporting/c52cd936-0373-4b71-8708-1fe917199595
 
 ---
 
