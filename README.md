@@ -24,6 +24,7 @@ ga4-bigquery-neobank-analytics/
     ├── 02_user_acquisition.sql         → Traffic sources, channel performance, CAC proxy
     ├── 03_conversion_funnel.sql        → Event funnel: landing → engagement → conversion
     ├── 04_retention_cohorts.sql        → Weekly cohort retention (visits & purchases)
+    └── 05_business_playbook.sql        → Combined KPIs: ROAS proxy, LTV estimate, churn signal
 ```
 
 ---
@@ -47,6 +48,19 @@ ga4-bigquery-neobank-analytics/
 | `02_user_acquisition.sql` | `traffic_source`, channel grouping, `COUNT DISTINCT`, session reconstruction |
 | `03_conversion_funnel.sql` | Conditional aggregation, funnel steps, conversion rate, `CASE WHEN` |
 | `04_retention_cohorts.sql` | Cohort definition, `DATE_DIFF`, `COUNTIF`, retention rate |
+| `05_business_playbook.sql` | Multi-CTE pipelines, LTV proxy, churn signal, executive KPI summary |
+
+---
+
+## Business Playbook — Queries at a Glance
+
+| # | Business Question | Use Case |
+|---|---|---|
+| Q1 | Which acquisition channels drive the most engaged users? | Marketing budget allocation |
+| Q2 | Where do users drop off in the conversion funnel? | Product & UX optimisation |
+| Q3 | What does weekly retention look like by acquisition cohort? | Growth & engagement KPIs |
+| Q4 | Which user segments have the highest revenue potential? | LTV-based targeting |
+| Q5 | What signals predict churn before it happens? | Proactive retention |
 
 ---
 
